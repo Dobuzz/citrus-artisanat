@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Midan Regular";
+  src: local("Midan Regular"),
+    local("Midan-Regular"),
+    url("fonts/Midan-Regular.woff2") format("woff2"),
+    url("fonts/Midan-Regular.woff") format("woff");
+  font-display: swap;
+}
+
 :root {
   --background: #f9f1e6;
   --panel: #f7e8d6;
@@ -6,6 +15,7 @@
   --text: #4b3a2c;
   --muted: #9b7f6a;
   --shadow: 0 8px 20px rgba(91, 70, 54, 0.12);
+  --display-font: "Midan Regular", "Cormorant Garamond", serif;
 }
 
 * {
@@ -206,7 +216,7 @@ body {
 
 .categories h3 {
   margin-top: 16px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 20px;
 }
 
@@ -229,7 +239,7 @@ body {
 }
 
 .section-title h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 30px;
 }
 
@@ -260,7 +270,7 @@ body {
 }
 
 .card h4 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 20px;
 }
 
@@ -283,7 +293,7 @@ body {
 }
 
 .about-card h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 26px;
   margin-bottom: 12px;
 }
@@ -319,7 +329,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 18px;
 }
 
