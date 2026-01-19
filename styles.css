@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Midan Regular";
+  src: local("Midan Regular"),
+    local("Midan-Regular"),
+    url("fonts/Midan-Regular.woff2") format("woff2"),
+    url("fonts/Midan-Regular.woff") format("woff");
+  font-display: swap;
+}
+
 :root {
   --background: #f9f1e6;
   --panel: #f7e8d6;
