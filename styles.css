@@ -282,7 +282,13 @@ body {
 }
 
 .card {
-  background: #fbf4ec;
+  background: linear-gradient(
+      135deg,
+      rgba(245, 206, 199, 0.18),
+      rgba(250, 187, 146, 0.16),
+      rgba(164, 189, 168, 0.16)
+    ),
+    #fbf4ec;
   padding: 16px;
   border-radius: 18px;
   text-align: center;
