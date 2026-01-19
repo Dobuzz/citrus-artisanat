@@ -307,6 +307,7 @@ body {
 .about-card h2.midan-regular {
   font-family: "Midan Regular", "Cormorant Garamond", serif;
   font-weight: 400;
+  font-size: 40px;
 }
 
 .about-tagline {
@@ -342,6 +343,10 @@ body {
   gap: 16px;
   font-family: var(--display-font);
   font-size: 18px;
+}
+
+.socials .midan-regular {
+  font-size: 26px;
 }
 
 .icons {
