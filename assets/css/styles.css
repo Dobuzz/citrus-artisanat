@@ -1,9 +1,20 @@
 @font-face {
-  font-family: "Midan Regular";
+  font-family: "Midan";
   src: local("Midan Regular"),
     local("Midan-Regular"),
-    url("fonts/Midan-Regular.woff2") format("woff2"),
-    url("fonts/Midan-Regular.woff") format("woff");
+    url("../fonts/midan-regular/midan-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Midan";
+  src: local("Midan Black"),
+    local("Midan-Black"),
+    url("../fonts/midan-regular/midan-black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -15,7 +26,7 @@
   --text: #4b3a2c;
   --muted: #9b7f6a;
   --shadow: 0 8px 20px rgba(91, 70, 54, 0.12);
-  --display-font: "Midan Regular", "Cormorant Garamond", serif;
+  --display-font: "Midan", "Cormorant Garamond", serif;
 }
 
 * {
@@ -73,9 +84,9 @@ body {
 }
 
 .logo-title {
-  font-family: "Dancing Script", cursive;
+  font-family: var(--display-font);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .logo-subtitle {
@@ -122,7 +133,7 @@ body {
 }
 
 .hero-copy h1 {
-  font-family: "Dancing Script", cursive;
+  font-family: var(--display-font);
   font-size: 44px;
   margin: 8px 0 12px;
 }
