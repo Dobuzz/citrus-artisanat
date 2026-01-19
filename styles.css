@@ -2,9 +2,10 @@
   font-family: "Midan Regular";
   src: local("Midan Regular"),
     local("Midan-Regular"),
-    url("fonts/Midan-Regular.woff2") format("woff2"),
-    url("fonts/Midan-Regular.woff") format("woff");
+    url("assets/fonts/Midan-Regular.ttf") format("truetype");
   font-display: swap;
+  font-style: normal;
+  font-weight: 400;
 }
 
 :root {
@@ -15,7 +16,7 @@
   --text: #4b3a2c;
   --muted: #9b7f6a;
   --shadow: 0 8px 20px rgba(91, 70, 54, 0.12);
-  --display-font: "Midan Regular", "Cormorant Garamond", serif;
+  --display-font: "Cormorant Garamond", serif;
 }
 
 * {
@@ -76,6 +77,11 @@ body {
   font-family: "Dancing Script", cursive;
   font-size: 22px;
   font-weight: 600;
+}
+
+.midan-regular {
+  font-family: "Midan Regular", "Cormorant Garamond", serif;
+  font-weight: 400;
 }
 
 .logo-subtitle {
@@ -296,6 +302,11 @@ body {
   font-family: var(--display-font);
   font-size: 26px;
   margin-bottom: 12px;
+}
+
+.about-card h2.midan-regular {
+  font-family: "Midan Regular", "Cormorant Garamond", serif;
+  font-weight: 400;
 }
 
 .about-tagline {
